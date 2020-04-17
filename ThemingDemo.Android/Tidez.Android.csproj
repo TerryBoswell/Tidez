@@ -54,6 +54,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Iconize.FontAwesome">
+      <Version>3.5.0.129</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
   </ItemGroup>
   <ItemGroup>
@@ -64,11 +67,16 @@
     <Compile Include="Extensions\ViewGroupExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Resources\font\Kaushan.otf" />
+    <AndroidAsset Include="Assets\Pacifico.ttf" />
+    <AndroidAsset Include="Assets\Sharkbit.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\font\Sharkbit.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\font\Pacifico.ttf" />
     <AndroidResource Include="Resources\layout\Tabbar.xml" />
     <AndroidResource Include="Resources\layout\Toolbar.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />

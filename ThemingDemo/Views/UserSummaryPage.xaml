@@ -28,7 +28,7 @@
                         <Label Text="Tidez"
                            VerticalOptions="Center"
                            HorizontalOptions="Start"
-                           Style="{StaticResource MediumLabelStyle}" />
+                           Style="{StaticResource HeaderLabelStyle}" />
                         <Image 
                            Margin="0,0,5,0"
                             HorizontalOptions="End"
