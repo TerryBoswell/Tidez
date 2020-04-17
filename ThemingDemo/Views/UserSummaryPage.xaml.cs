@@ -20,8 +20,7 @@ namespace Tidez
         
         async void OnNavigationInvoked(object sender, EventArgs e)
         {
-            DoUpdate();
-            //await Navigation.PushAsync(new UserDetailsPage());
+            DoUpdate();            
         }
 
         async void OnThemeToolbarItemClicked(object sender, EventArgs e)

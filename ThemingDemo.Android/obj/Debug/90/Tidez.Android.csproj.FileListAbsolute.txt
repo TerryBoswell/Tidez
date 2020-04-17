@@ -467,6 +467,14 @@ C:\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Tidez\ThemingDemo.Android\bin\Debug\Tidez.dll.mdb
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez..dll
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez..pdb
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez.apk
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez.aab
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez-Signed.aab
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez-Signed.apk
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez.dll
+C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez.pdb
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\build.props
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\adb.props
@@ -494,14 +502,6 @@ C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\flata\6D19CC8B4D4C8286.flata
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\flata\295DA342584C9FBE.flata
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\flata\F580AF3C314CCC16.flata
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\flata\AE20FF0A9B6A091D.flata
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez..dll
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez..pdb
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez.apk
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez.aab
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez-Signed.aab
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\boswell.terry.Tidez-Signed.apk
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez.dll
-C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez.pdb
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\flata\compiled.flata
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\R.txt
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\R.cs.flag
@@ -530,6 +530,7 @@ C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\mipmap-xxhdpi\icon.png
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\drawable\app.png
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\uploadflags.txt
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\resolvedassemblies.hash
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
@@ -936,4 +937,3 @@ C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\_git\Tidez\ThemingDemo.Android\bin\Debug\Tidez.dll.mdb
-C:\_git\Tidez\ThemingDemo.Android\obj\Debug\90\res\drawable\app.png

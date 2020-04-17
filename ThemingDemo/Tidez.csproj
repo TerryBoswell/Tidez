@@ -24,14 +24,10 @@
   <ItemGroup>
     <None Remove="Images\app.png" />
     <None Remove="Images\headericon.png" />
-    <None Remove="Images\monkey.png" />
-    <None Remove="Images\FacePalm.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\app.png" />
     <EmbeddedResource Include="Images\headericon.png" />
-    <EmbeddedResource Include="Images\monkey.png" />
-    <EmbeddedResource Include="Images\FacePalm.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\LocationsPage.xaml">
