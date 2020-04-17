@@ -13,11 +13,13 @@ namespace Tidez
         {
             InitializeComponent();
             startDatePicker.Date = DateTime.Now;
-            //picker.SelectedIndex = 0;
-            picker.SelectedItem = UIConstants.NumberOfLocationOptions[0];
+            setDefaultLocation();
         }
 
-        
+        private void setDefaultLocation()
+        {
+            picker.SelectedItem = UIConstants.NumberOfLocationOptions[0];
+        }
         async void OnNavigationInvoked(object sender, EventArgs e)
         {
             DoUpdate();            
@@ -42,6 +44,8 @@ namespace Tidez
         private async void DoUpdate()
         {
             var now = startDatePicker.Date;
+            if (picker.SelectedItem == null)
+                setDefaultLocation();
             LocationData locationData = picker.SelectedItem as LocationData;
             location = Core.TideData.GetLocationId(locationData.Description);
             Task<Core.DailyData> loadTask = Core.TideData.LoadTideData(now, location);
@@ -52,7 +56,7 @@ namespace Tidez
             lowTide2.Text = GetTideText(results.SecondLowTide, results);
             sunRise.Text = results.SunRise.Value.ToShortTimeString();
             sunSet.Text = results.SunSet.Value.ToShortTimeString();
-
+            //Toast.MakeText(this, toast, ToastLength.Short).Show();
         }
 
         private static string GetTideText(DateTime? time, Core.DailyData data)
