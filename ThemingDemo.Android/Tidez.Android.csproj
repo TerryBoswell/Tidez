@@ -91,7 +91,6 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\icon\" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +98,9 @@
       <Project>{373D2082-568C-4630-90D2-B5C85E542EE0}</Project>
       <Name>Tidez</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\app.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -4,7 +4,8 @@ using Android.OS;
 
 namespace Tidez.Droid
 {
-    [Activity(Label = "Tidez", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    //@mipmap/icon
+    [Activity(Label = "Tidez", Icon = "@drawable/app", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         internal static MainActivity Instance { get; private set; }
