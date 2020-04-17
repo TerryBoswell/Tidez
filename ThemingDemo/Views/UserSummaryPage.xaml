@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Tidez"
+             x:Class="Tidez.UserSummaryPage"
+             Title="Tidez"             
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Location"
+                     Clicked="OnThemeToolbarItemClicked" />
+    </ContentPage.ToolbarItems>-->
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="{DynamicResource PrimaryColor}">
+                <StackLayout Margin="0"
+                 VerticalOptions="CenterAndExpand">
+                    <Grid Margin="10,0,10,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Text="Tidez"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Style="{StaticResource MediumLabelStyle}" />
+                        <Image 
+                           Margin="0,0,5,0"
+                            HorizontalOptions="End"
+                           Source="{local:ImageResource Tidez.Images.headericon.png}"
+                           HeightRequest="100"
+                           WidthRequest="100" />
+                        <!--<Label x:Name="lowTide2" Text="11:00AM" Style="{StaticResource MediumLabelStyleTide}" HorizontalOptions="Center" />-->
+                    </Grid>
+
+                    <Picker Margin="10,0" x:Name="picker" Title="Select a location" 
+                            SelectedIndexChanged="OnPickerSelectionChanged"
+                            ItemsSource="{x:Static local:UIConstants.NumberOfLocationOptions}"
+                            ItemDisplayBinding="{Binding Description}"
+                            
+                            Style="{StaticResource MediumLabelStyle}">
+                        <!--<Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Bowleys Bar</x:String>
+                                <x:String>Rocky Point</x:String>
+                                <x:String>Ocean City Fishing Pier</x:String>
+                                <x:String>Ocean City Inlet</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>-->
+                    </Picker>
+                </StackLayout>
+            </Grid>
+            <StackLayout Grid.Row="1"
+                         Margin="10">
+                <Label x:Name="highTideLabel" Text="High Tides:" Style="{StaticResource MediumLabelStyle}" />
+                
+                <Grid Margin="10,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="highTide1" Text="11:00AM" Style="{StaticResource MediumLabelStyleTide}" HorizontalOptions="Start" />
+                    <Label x:Name="highTide2" Text="11:00AM" Style="{StaticResource MediumLabelStyleTide}" HorizontalOptions="Center" />
+                </Grid>
+
+                <Label x:Name="lowTideLabel" Text="Low Tides:" Style="{StaticResource MediumLabelStyle}" />
+
+                <Grid Margin="10,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lowTide1" Text="11:00AM" Style="{StaticResource MediumLabelStyleTide}" HorizontalOptions="Start" />
+                    <Label x:Name="lowTide2" Text="11:00AM" Style="{StaticResource MediumLabelStyleTide}" HorizontalOptions="Center" />
+                </Grid>
+
+                <Label x:Name="sunLabel" Text="Sun:" Style="{StaticResource MediumLabelStyle}" />
+
+                <Grid Margin="10,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="sunRise" Text="00:00AM" Style="{StaticResource MediumLabelStyleSun}" HorizontalOptions="Start" />
+                    <Label x:Name="sunSet" Text="00:00AM" Style="{StaticResource MediumLabelStyleSun}" HorizontalOptions="Center" />
+                </Grid>
+
+            </StackLayout>
+            <DatePicker Grid.Row="2" x:Name="startDatePicker"
+                    Format="D"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    DateSelected="startDatePicker_DateSelected"
+                    Style="{StaticResource MediumLabelStyleDate}"                    
+                     />
+
+            <Button Grid.Row="3"
+                    Text="Refesh"
+                    Clicked="OnNavigationInvoked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Style="{StaticResource ButtonStyle}" />
+        </Grid>
+    </ScrollView>
+</ContentPage>

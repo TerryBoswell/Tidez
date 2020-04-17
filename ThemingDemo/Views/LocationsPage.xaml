@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tidez.Views.LocationsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="picker" Title="Select a location" SelectedIndexChanged="OnPickerSelectionChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Bowleys Bar</x:String>
+                        <x:String>Rocky Point</x:String>
+                        <x:String>Ocean City Fishing Pier</x:String>
+                        <x:String>Ocean City Inlet</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

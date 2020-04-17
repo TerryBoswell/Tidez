@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Themes\" />
+    <Folder Include="Services\" />
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\app.png" />
+    <None Remove="Images\headericon.png" />
+    <None Remove="Images\monkey.png" />
+    <None Remove="Images\FacePalm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\app.png" />
+    <EmbeddedResource Include="Images\headericon.png" />
+    <EmbeddedResource Include="Images\monkey.png" />
+    <EmbeddedResource Include="Images\FacePalm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\LocationsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
